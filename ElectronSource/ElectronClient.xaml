@@ -18,7 +18,7 @@
                         <Button x:Name="CloseButton" Margin="0,5,20,0" Background="Black" Content="X" Foreground="Red" BorderBrush="{x:Null}" Width="40" Height="20" Click="CloseButton_Click"></Button>
                     -->
                         <Rectangle x:Name="MinimizeRect" Fill="White" Width="16" Height="16" RadiusX="10" RadiusY="10" Margin="0,0,3,0" MouseDown="MinimizeRect_MouseDown"/>
-                        <Rectangle x:Name="CloseRect" Fill="#FF7F50" Width="16" Height="16" RadiusX="10" RadiusY="10" Margin="0,0,13,0" MouseDown="CloseRect_MouseDown"/>
+                        <Rectangle x:Name="CloseRect" Fill="#add8e6" Width="16" Height="16" RadiusX="10" RadiusY="10" Margin="0,0,13,0" MouseDown="CloseRect_MouseDown"/>
 
                     </StackPanel>
                     <StackPanel x:Name="Stackpanel_Titelbar" HorizontalAlignment="Left" Margin="0" Height="30" Orientation="Horizontal">
@@ -30,12 +30,12 @@
                 <Grid x:Name="UI" Margin="-1,30,0,0">
                     <Grid>
                         <StackPanel Height="50" Orientation="Horizontal" VerticalAlignment="Top" Margin="10,0,0,0">
-                            <Label Background="{x:Null}" Foreground="#FF7F50" Content="Game Status:" Margin="0"/>
+                            <Label Background="{x:Null}" Foreground="#7c00ff" Content="Game Status:" Margin="0"/>
                             <Label x:Name="label_gamestatus" Background="{x:Null}" Foreground="Red" Margin="5,0,0,0" RenderTransformOrigin="0.833,0.743" Content="Not Found"/>
                         </StackPanel>
                     </Grid>
                     <StackPanel Height="50" VerticalAlignment="Top" Orientation="Horizontal" Margin="10,25,10,0" d:IsLocked="True">
-                        <Label Background="{x:Null}" Foreground="#FF7F50" Margin="0" RenderTransformOrigin="0.833,0.743" Height="50" FontWeight="Bold" Content="Position (X,Y,Z)"/>
+                        <Label Background="{x:Null}" Foreground="#7c00ff" Margin="0" RenderTransformOrigin="0.833,0.743" Height="50" FontWeight="Bold" Content="Position (X,Y,Z)"/>
                         <Label x:Name="label_positionX" Background="{x:Null}" Foreground="#FF4500" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
                         <Label x:Name="label_positionY" Background="{x:Null}" Foreground="#FF4500" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="70" HorizontalAlignment="Left"/>
                         <Label x:Name="label_positionZ" Background="{x:Null}" Foreground="#FF4500" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
@@ -188,7 +188,7 @@
                     </Grid>
                 </Grid>
             </Grid>
-            <Border BorderThickness="2" BorderBrush="#FF6347" CornerRadius="20" />
+            <Border BorderThickness="2" BorderBrush="#add8e6" CornerRadius="20" />
             <Border x:Name="template" BorderBrush="Black" BorderThickness="1" Margin="0" Width="0" Height="0" d:IsHidden="True">
                 <Grid x:Name="gbutton_default" Height="30" VerticalAlignment="Top" Margin="0,292,0,0" MouseUp="Gbutton_default_MouseUp">
                     <Border x:Name="gbutton_default_b" BorderBrush="Black" BorderThickness="1" Background="#B26400FF" CornerRadius="10"/>

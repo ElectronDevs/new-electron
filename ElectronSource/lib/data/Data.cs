@@ -19,7 +19,7 @@ namespace Electron
 
         public static class Pointer
         {
-            // POS okuchi this new code crashes the client get the right offsets
+            // POS 
             public static string PosX  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x458";
             public static string PosY  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x45C";
             public static string PosZ  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x460";
@@ -97,8 +97,8 @@ namespace Electron
         {
             public static class gbutton
             {
-                public static string on = "#FF4500";
-                public static string off = "#FF7F50";
+                public static string on = "#9400D3";
+                public static string off = "#7F6400FF";
                 public static string locked = "#7F646464";
                 public static string trigger = "#7F6400FF";
             }
