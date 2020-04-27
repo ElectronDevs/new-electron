@@ -9,7 +9,7 @@ namespace Electron
 {
     public static class Data
     {
-        public static class NAME
+        public static class Info
         {
             public static readonly string client = "Electron";
             public static readonly string creator = "Okuchi";
@@ -37,7 +37,7 @@ namespace Electron
             public static string Speed = "Minecraft.Windows.exe+03055638,0xa8,0x18,0xc8,0x438,0x18,0xe0,0x8,0x9c";
 
             // Rapidhit
-            public static string Rapidhit = "Minecraft.Windows.exe+0x2999D60,0x120,0x398,0x8,0x380,0x50,0x2e0,0x88,0x50";
+            public static string Rapidhit = "Minecraft.Windows.exe+0305ABA8,0x598,0x700,0x288,0x88,0x50";
 
             // Nofall
             public static string Nofall = "Minecraft.Windows.exe+0x0297FF70,0x58,0x38,0x30,0x8,0x178";
