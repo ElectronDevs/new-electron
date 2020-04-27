@@ -48,7 +48,7 @@ namespace Electron
             // FakeCreative (1/2)
             public static string FakeGamemode = "Minecraft.Windows.exe+0x0297FFB0,0x58,0x18,0xf8,0x8,0xf98,0x0,0xc1c";
 
-            // FakeCrative Help (2/2)
+            // FakeCreative Help (2/2) blah blah blah
             public static string FakeGamemodeHelp = "Minecraft.Windows.exe+0x0299A838,0x80,0x18,0x10,0x40,0x0,0xf98,0x0,0xc1c";
         }
 
