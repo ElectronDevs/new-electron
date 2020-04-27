@@ -19,16 +19,16 @@ namespace Electron
 
         public static class Pointer
         {
-            // POS
-            public static string PosX  = "Minecraft.Windows.exe+0x02980000,0x58,0x18,0x130,0x320,0x0,0x40,0x0,0xde8";
-            public static string PosY  = "Minecraft.Windows.exe+0x02980000,0x58,0x18,0x130,0x320,0x0,0x40,0x0,0xdec";
-            public static string PosZ  = "Minecraft.Windows.exe+0x02980000,0x58,0x18,0x130,0x320,0x0,0x40,0x0,0xdf0";
-            public static string Pos2X = "Minecraft.Windows.exe+0x02980000,0x58,0x18,0x130,0x320,0x0,0x40,0x0,0xdf4";
-            public static string Pos2Y = "Minecraft.Windows.exe+0x02980000,0x58,0x18,0x130,0x320,0x0,0x40,0x0,0xdf8";
-            public static string Pos2Z = "Minecraft.Windows.exe+0x02980000,0x58,0x18,0x130,0x320,0x0,0x40,0x0,0xdfc";
+            // POS okuchi this new code crashes the client get the right offsets
+            public static string PosX  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x458";
+            public static string PosY  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x45C";
+            public static string PosZ  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x460";
+            public static string Pos2X = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x464";
+            public static string Pos2Y = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x46E";
+            public static string Pos2Z = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x472";
 
             // Velocity
-            public static string VelocityY = "Minecraft.Windows.exe+0x0297FF70,0x58,0x18,0xc8,0xe10";
+            public static string VelocityY = "Minecraft.Windows.exe+03055638,0x0,0xC8,0x18,0xA8";
 
             // Onground
             public static string Onground = "Minecraft.Windows.exe+03090F38,0x18,0x20,0x60,0x568,0x1108,0x70,0x78,0x178";
@@ -50,6 +50,7 @@ namespace Electron
 
             // FakeCrative Help (2/2)
             public static string FakeGamemodeHelp = "Minecraft.Windows.exe+0x0299A838,0x80,0x18,0x10,0x40,0x0,0xf98,0x0,0xc1c";
+
         }
 
         public static class Module
@@ -57,7 +58,6 @@ namespace Electron
             public static class Status
             {
                 public static bool ChangeOnNextCheck = false;
-
                 public static bool Airjump = false;
                 public static bool Speed = false;
                 public static bool Rapidhit = false;
@@ -116,7 +116,7 @@ namespace Electron
             {
                 public static bool gbutton_module_airjump = false;
                 public static bool gbutton_module_speed = false;
-                public static bool gbutton_module_glide = true;
+                public static bool gbutton_module_glide = false;
                 public static bool gbutton_module_rapidhit = false;
                 public static bool gbutton_module_nofall = false;
                 public static bool gbutton_module_fallfromhightplace = false;
