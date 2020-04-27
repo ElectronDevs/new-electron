@@ -17,13 +17,13 @@
                         <!--    <Button x:Name="MinimizeButton" Margin="0,5,0,0" Background="Black" Content="-" Foreground="Red" BorderBrush="{x:Null}" Width="40" Height="20" Click="MinimizeButton_Click"></Button>
                         <Button x:Name="CloseButton" Margin="0,5,20,0" Background="Black" Content="X" Foreground="Red" BorderBrush="{x:Null}" Width="40" Height="20" Click="CloseButton_Click"></Button>
                     -->
-                        <Rectangle x:Name="MinimizeRect" Fill="White" Width="16" Height="16" RadiusX="10" RadiusY="10" Margin="0,0,5,0" MouseDown="MinimizeRect_MouseDown"/>
-                        <Rectangle x:Name="CloseRect" Fill="#FF9600FF" Width="16" Height="16" RadiusX="10" RadiusY="10" Margin="0,0,15,0" MouseDown="CloseRect_MouseDown"/>
+                        <Rectangle x:Name="MinimizeRect" Fill="White" Width="16" Height="16" RadiusX="10" RadiusY="10" Margin="0,0,3,0" MouseDown="MinimizeRect_MouseDown"/>
+                        <Rectangle x:Name="CloseRect" Fill="#FF9600FF" Width="16" Height="16" RadiusX="10" RadiusY="10" Margin="0,0,13,0" MouseDown="CloseRect_MouseDown"/>
 
                     </StackPanel>
                     <StackPanel x:Name="Stackpanel_Titelbar" HorizontalAlignment="Left" Margin="0" Height="30" Orientation="Horizontal">
                         <Label Content="Electron Client" Foreground="White" Margin="10,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
-                        <Label Content="v3.1.0 BETA" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
+                        <Label Content="v3.1.2 BETA" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                         <Label Content="by CXCubeHD/Okuchi" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                     </StackPanel>
                 </Grid>
