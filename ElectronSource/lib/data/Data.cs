@@ -17,10 +17,6 @@ namespace Electron
 
         public static string procName = "Minecraft.Windows";
 
-        public static class Scripts
-        {
-            public static string RapidHit
-        }
         public static class Pointer
         {
             // POS

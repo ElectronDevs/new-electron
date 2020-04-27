@@ -151,9 +151,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ICON128.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="ICON128.ico" />
   </ItemGroup>
   <ItemGroup>
