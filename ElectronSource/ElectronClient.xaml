@@ -36,9 +36,9 @@
                     </Grid>
                     <StackPanel Height="50" VerticalAlignment="Top" Orientation="Horizontal" Margin="10,25,10,0" d:IsLocked="True">
                         <Label Background="{x:Null}" Foreground="#7c00ff" Margin="0" RenderTransformOrigin="0.833,0.743" Height="50" FontWeight="Bold" Content="Position (X,Y,Z)"/>
-                        <Label x:Name="label_positionX" Background="{x:Null}" Foreground="#FF4500" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
-                        <Label x:Name="label_positionY" Background="{x:Null}" Foreground="#FF4500" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="70" HorizontalAlignment="Left"/>
-                        <Label x:Name="label_positionZ" Background="{x:Null}" Foreground="#FF4500" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
+                        <Label x:Name="label_positionX" Background="{x:Null}" Foreground="#7F6400FF" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
+                        <Label x:Name="label_positionY" Background="{x:Null}" Foreground="#7F6400FF" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="70" HorizontalAlignment="Left"/>
+                        <Label x:Name="label_positionZ" Background="{x:Null}" Foreground="#7F6400FF" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
 
                     </StackPanel>
                     <Grid x:Name="module_shower" Margin="0,60,0,10">
@@ -163,12 +163,12 @@
                                     <StackPanel Margin="10,0">
                                         <Label Content="X, Y, Z         use ~ to mark your relativ position" VerticalAlignment="Top" Margin="0,5,0,0" Height="30" Foreground="White" FontWeight="Bold" Background="{x:Null}" HorizontalAlignment="Center"/>
                                         <StackPanel VerticalAlignment="Top" Margin="0">
-                                            <TextBox x:Name="textbox_module_teleport_x" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#FF4500" Foreground="White" Margin="0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="11"/>
-                                            <TextBox x:Name="textbox_module_teleport_y" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#FF4500" Foreground="White" Margin="0,5,0,0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="5"/>
-                                            <TextBox x:Name="textbox_module_teleport_z" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#FF4500" Foreground="White" Margin="0,5,0,0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="11"/>
+                                            <TextBox x:Name="textbox_module_teleport_x" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#7F6400FF" Foreground="White" Margin="0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="11"/>
+                                            <TextBox x:Name="textbox_module_teleport_y" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#7F6400FF" Foreground="White" Margin="0,5,0,0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="5"/>
+                                            <TextBox x:Name="textbox_module_teleport_z" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#7F6400FF" Foreground="White" Margin="0,5,0,0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="11"/>
                                         </StackPanel>
                                         <Grid x:Name="gbutton_trigger_module_tp" Height="30" MouseUp="Gbutton_module_tp_b_MouseUp" Margin="0,10,0,0">
-                                            <Border x:Name="gbutton_trigger_module_tp_b" BorderThickness="1" Height="30" CornerRadius="10" Background="#FF8C00"/>
+                                            <Border x:Name="gbutton_trigger_module_tp_b" BorderThickness="1" Height="30" CornerRadius="10" Background="#7F6400FF"/>
                                             <Label x:Name="gbutton_trigger_module_tp_t" Content="Teleport" VerticalAlignment="Top" Margin="0" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Background="{x:Null}" Foreground="White" Height="30"/>
                                         </Grid>
                                         <TextBlock x:Name="textblock_module_teleport_errorshower" TextWrapping="Wrap" Text="There was an error at reading the position" VerticalAlignment="Top" Margin="0,5,0,0" Foreground="Red"/>
@@ -179,7 +179,7 @@
                             <TabItem Header="More" Background="{x:Null}" Foreground="White">
                                 <Grid>
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
-                                        <CheckBox x:Name="checkbox_trigger_clientsettings_enabledevsettings" Content="Enable Dev Settings (HotKeys)" VerticalAlignment="Top" Foreground="White" Background="White" BorderBrush="#FFA500" FontSize="20" Margin="0"/>
+                                        <CheckBox x:Name="checkbox_trigger_clientsettings_enabledevsettings" Content="Enable Dev Settings (HotKeys)" VerticalAlignment="Top" Foreground="White" Background="White" BorderBrush="#7F6400FF" FontSize="20" Margin="0"/>
                                     </StackPanel>
                                     <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
