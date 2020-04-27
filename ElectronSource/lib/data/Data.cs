@@ -116,12 +116,12 @@ namespace Electron
             {
                 public static bool gbutton_module_airjump = false;
                 public static bool gbutton_module_speed = false;
-                public static bool gbutton_module_glide = false;
-                public static bool gbutton_module_rapidhit = false;
-                public static bool gbutton_module_nofall = false;
+                public static bool gbutton_module_glide = true;
+                public static bool gbutton_module_rapidhit = true;
+                public static bool gbutton_module_nofall = true;
                 public static bool gbutton_module_fallfromhightplace = false;
-                public static bool gbutton_module_showcoordinates = false;
-                public static bool gbutton_module_fakegamemode = false;
+                public static bool gbutton_module_showcoordinates = true;
+                public static bool gbutton_module_fakegamemode = true;
                 public static bool gbutton_module_teleport = false;
             }
         }
