@@ -37,7 +37,7 @@ namespace Electron
             public static string Speed = "Minecraft.Windows.exe+03055638,0xa8,0x18,0xc8,0x438,0x18,0xe0,0x8,0x9c";
 
             // Rapidhit
-            public static string Rapidhit = "Minecraft.Windows.exe+0x2999D60,0x120,0x398,0x8,0x380,0x50,0x2e0,0x88,0x50";
+            public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x598,0x700,0x288,0x88,0x50";
 
             // Nofall
             public static string Nofall = "Minecraft.Windows.exe+0x0297FF70,0x58,0x38,0x30,0x8,0x178";
@@ -73,13 +73,14 @@ namespace Electron
                 public static float GlideVelocityY = 0.02f;
                 public static int FakeGamemode = 1;
                 public static int AirJump = 16777473;
+                public static int Rapidhit = 0;
             }
         }
 
         public static class DefaultHotKeyProfiles
         {
             public static Key AirJump = Key.NumPad9;
-            public static Key Speed = Key.NumPad8;
+            public static Key Speed = Key.P;
             public static Key Rapidhit = Key.NumPad0;
             public static Key Nofall = Key.NumPad1;
             public static Key ShowCoordinates = Key.NumPad7;
