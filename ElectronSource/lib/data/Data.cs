@@ -97,16 +97,16 @@ namespace Electron
         {
             public static class gbutton
             {
-                public static string on = "#B29600FF";
-                public static string off = "#339600FF";
+                public static string on = "#FF4500";
+                public static string off = "#FF7F50";
                 public static string locked = "#7F646464";
                 public static string trigger = "#7F6400FF";
             }
 
             public static class gbutton_radio
             {
-                public static string active = "#7F9664FF";
-                public static string inactive = "#7F646464";
+                public static string active = "#FF8C00";
+                public static string inactive = "#FFA500";
             }
         }
 
