@@ -20,12 +20,12 @@ namespace Electron
         public static class Pointer
         {
             // POS 
-            public static string PosX  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x458";
-            public static string PosY  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x45C";
-            public static string PosZ  = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x460";
-            public static string Pos2X = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x464";
-            public static string Pos2Y = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x46E";
-            public static string Pos2Z = "Minecraft.Windows.exe+3055618,0xA8,0x18,0xC8,0x472";
+            public static string PosX  = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x458";
+            public static string PosY  = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x45C";
+            public static string PosZ  = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x460";
+            public static string Pos2X = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x464";
+            public static string Pos2Y = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x468";
+            public static string Pos2Z = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x46C";
 
             // Velocity
             public static string VelocityY = "Minecraft.Windows.exe+03055638,0x0,0xC8,0x18,0xA8";
