@@ -49,7 +49,7 @@ namespace Electron
             }
         }
 
-        public static void  StartModuleWorker()
+        public static void StartModuleWorker()
         {
             // Modules
             BackgroundWorker ModuleWorker_Rapidhit = new BackgroundWorker();
@@ -67,7 +67,17 @@ namespace Electron
             {
                 if (Status_Process_Open)
                 {
-                    
+                    if (Data.Module.Status.Rapidhit == true)
+                    {
+                        try
+                        {
+                            m.writeMemory(Data.Pointer.Rapidhit, "byte", "0x00");
+                        }
+                        catch
+                        {
+
+                        }
+                    }
 
                     if (Data.Module.Status.FakeGamemode == true)
                     {
@@ -75,7 +85,8 @@ namespace Electron
                         {
                             m.writeMemory(Data.Pointer.FakeGamemode, "byte", Data.Module.Value.FakeGamemode.ToString());
                             m.writeMemory(Data.Pointer.FakeGamemodeHelp, "byte", Data.Module.Value.FakeGamemode.ToString());
-                        } catch
+                        }
+                        catch
                         {
 
                         }
@@ -102,7 +113,8 @@ namespace Electron
                         try
                         {
                             m.writeMemory(Data.Pointer.Onground, "bytes", "01 00 01 01");
-                        } catch
+                        }
+                        catch
                         {
 
                         }
@@ -113,7 +125,8 @@ namespace Electron
                         try
                         {
                             m.writeMemory(Data.Pointer.Speed, "float", Data.Module.Value.Speed.ToString());
-                        } catch
+                        }
+                        catch
                         {
 
                         }
@@ -124,7 +137,8 @@ namespace Electron
                         try
                         {
                             m.writeMemory(Data.Pointer.Nofall, "float", "0");
-                        } catch
+                        }
+                        catch
                         {
 
                         }
@@ -135,7 +149,8 @@ namespace Electron
                         try
                         {
                             m.writeMemory(Data.Pointer.ShowCoordinates, "byte", "1");
-                        } catch
+                        }
+                        catch
                         {
 
                         }
@@ -146,10 +161,12 @@ namespace Electron
                         try
                         {
                             m.writeMemory(Data.Pointer.VelocityY, "float", Data.Module.Value.GlideVelocityY.ToString());
-                        } catch
+                        }
+                        catch
                         {
 
                         }
+
                     }
                 }
             }
@@ -217,6 +234,52 @@ namespace Electron
                     }
                 }
             }
+
+            public static void Teleport(float? posX, float? posY, float? posZ)
+            {
+                if (Status_Process_Open)
+                {
+                    try
+                    {
+                        if (posX != null)
+                        {
+                            m.writeMemory(Data.Pointer.PosX, "float", (posX + 0.20f).ToString());
+                            m.writeMemory(Data.Pointer.Pos2X, "float", (posX + 0.80f).ToString());
+                            Debug.WriteLine("PosX, 2X: " + posX.ToString() + "  " + (posX + 0.60f).ToString());
+                        }
+                        else
+                        {
+
+                        }
+
+                        if (posY != null)
+                        {
+                            m.writeMemory(Data.Pointer.PosY, "float", posY.ToString());
+                            m.writeMemory(Data.Pointer.Pos2Y, "float", (posY + 1.80f).ToString());
+                            Debug.WriteLine("PosY, 2Y: " + posY.ToString() + "  " + (posY + 1.80f).ToString());
+                        }
+                        else
+                        {
+
+                        }
+
+                        if (posZ != null)
+                        {
+                            m.writeMemory(Data.Pointer.PosZ, "float", (posZ + 0.20f).ToString());
+                            m.writeMemory(Data.Pointer.Pos2Z, "float", (posZ + 0.80f).ToString());
+                            Debug.WriteLine("PosZ, 2Z: " + posZ.ToString() + "  " + (posZ + 0.60f).ToString());
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                }
+            }
         }
 
         public static class Module_Read
@@ -230,7 +293,8 @@ namespace Electron
                     try
                     {
                         value = m.readFloat(Data.Pointer.PosX) + 0.3f;
-                    } catch
+                    }
+                    catch
                     {
 
                     }
@@ -245,13 +309,14 @@ namespace Electron
                     try
                     {
                         value = m.readFloat(Data.Pointer.PosY);
-                    } catch
+                    }
+                    catch
                     {
 
                     }
                 }
                 return value;
-                
+
             }
             public static float GetZPos()
             {

@@ -24,7 +24,7 @@ namespace Electron
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
 
         public MainWindow()
         {
@@ -83,7 +83,8 @@ namespace Electron
             {
                 this.label_gamestatus.Content = "Found";
                 this.label_gamestatus.Foreground = Brushes.Lime;
-            } else
+            }
+            else
             {
                 this.label_gamestatus.Content = "NOT Found";
                 this.label_gamestatus.Foreground = Brushes.Red;
@@ -96,7 +97,8 @@ namespace Electron
             if (this.checkbox_trigger_clientsettings_enabledevsettings.IsChecked == true)
             {
                 Data.ClientSettings.EnableDevSettings = true;
-            } else
+            }
+            else
             {
                 Data.ClientSettings.EnableDevSettings = false;
             }
@@ -132,7 +134,7 @@ namespace Electron
                     }
                     Thread.Sleep(5);
                 }
-            } 
+            }
         }
 
         private void UpdateGButtons()
@@ -158,10 +160,12 @@ namespace Electron
             if (Status && !IsLocked)
             {
                 brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton.on);
-            } else if (!IsLocked)
+            }
+            else if (!IsLocked)
             {
                 brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton.off);
-            } else
+            }
+            else
             {
                 brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton.locked);
             }
@@ -177,7 +181,8 @@ namespace Electron
             if (!IsLocked)
             {
                 brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton.trigger);
-            } else
+            }
+            else
             {
                 brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton.locked);
             }
@@ -195,10 +200,12 @@ namespace Electron
                 if (i == activeIndex && !IsLoocked)
                 {
                     brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton_radio.active);
-                } else if (!IsLoocked)
+                }
+                else if (!IsLoocked)
                 {
                     brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton_radio.inactive);
-                } else
+                }
+                else
                 {
                     brush = (Brush)converter.ConvertFromString(DefaultColors.gbutton.locked);
                 }
@@ -209,7 +216,7 @@ namespace Electron
 
         private void Gbutton_default_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            
+
         }
 
         private void Gbutton_module_airjump_b_MouseUp(object sender, MouseButtonEventArgs e)
@@ -304,9 +311,103 @@ namespace Electron
         {
             if (!GButtonStatus.Locked.gbutton_module_teleport)
             {
-                OnMemoryUpdate.Module_Trigger.Teleport(float.Parse(textbox_module_teleport_x.Text), float.Parse(textbox_module_teleport_y.Text), float.Parse(textbox_module_teleport_z.Text));
+                float? X = null;
+                float? Y = null;
+                float? Z = null;
+
+                try
+                {
+                    if (textbox_module_teleport_x.Text[0] == '~')
+                    {
+                        X = OnMemoryUpdate.Module_Read.GetXPos();
+
+                        textbox_module_teleport_x.Text.Trim('~');
+                        textbox_module_teleport_x.Text.Trim();
+                        try
+                        {
+                            if (textbox_module_teleport_x.Text.Length != 0)
+                            {
+                                X += Single.Parse(textbox_module_teleport_x.Text);
+                            }
+                        }
+                        catch { }
+                    }
+                    else
+                    {
+                        textbox_module_teleport_x.Text.Trim();
+                        if (textbox_module_teleport_x.Text.Length != 0)
+                        {
+                            X = Single.Parse(textbox_module_teleport_x.Text);
+                        }
+                    }
+                }
+                catch { X = null; }
+
+                try
+                {
+                    if (textbox_module_teleport_y.Text[0] == '~')
+                    {
+                        Y = OnMemoryUpdate.Module_Read.GetYPos();
+
+                        textbox_module_teleport_y.Text.Trim('~');
+                        textbox_module_teleport_y.Text.Trim();
+                        try
+                        {
+                            if (textbox_module_teleport_y.Text.Length != 0)
+                            {
+                                Y += Single.Parse(textbox_module_teleport_y.Text);
+                            }
+                        }
+                        catch { }
+                    }
+                    else
+                    {
+                        textbox_module_teleport_y.Text.Trim();
+                        if (textbox_module_teleport_y.Text.Length != 0)
+                        {
+                            Y = Single.Parse(textbox_module_teleport_y.Text);
+                        }
+                    }
+                }
+                catch { Y = null; }
+
+                try
+                {
+                    if (textbox_module_teleport_z.Text[0] == '~')
+                    {
+                        Z = OnMemoryUpdate.Module_Read.GetZPos();
+
+                        textbox_module_teleport_z.Text.Trim('~');
+                        textbox_module_teleport_z.Text.Trim();
+                        try
+                        {
+                            if (textbox_module_teleport_z.Text.Length != 0)
+                            {
+                                Z += Single.Parse(textbox_module_teleport_z.Text);
+                            }
+                        }
+                        catch { }
+                    }
+                    else
+                    {
+                        textbox_module_teleport_z.Text.Trim();
+                        if (textbox_module_teleport_z.Text.Length != 0)
+                        {
+                            Z = Single.Parse(textbox_module_teleport_z.Text);
+                        }
+                    }
+                }
+                catch { Z = null; }
+
+                try
+                {
+                    OnMemoryUpdate.Module_Trigger.Teleport(X, Y, Z);
+                }
+                catch { }
                 Console.WriteLine("Should work...");
             }
         }
+
     }
-}
+}  
+
