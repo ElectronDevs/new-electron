@@ -37,10 +37,10 @@ namespace Electron
             public static string Speed = "Minecraft.Windows.exe+03055638,0xa8,0x18,0xc8,0x438,0x18,0xe0,0x8,0x9c";
 
             // Rapidhit
-            public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x598,0x700,0x288,0x88,0x50";
+            public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x210,0x58,0x1E8,0x1E0,0x8,0x100,0x10,0x438";
 
             // Nofall
-            public static string Nofall = "Minecraft.Windows.exe+0x0297FF70,0x58,0x38,0x30,0x8,0x178";
+            public static string Nofall = "Minecraft.Windows.exe+030506A8,0xC8,0x30,0x0,0x0,0x438,0x18,0x20,0x9C";
 
             // IngameCoordinates
             public static string ShowCoordinates = "Minecraft.Windows.exe+0x297FF18,0x58,0x10,0x150,0x9a4";
@@ -73,7 +73,7 @@ namespace Electron
                 public static float GlideVelocityY = 0.02f;
                 public static int FakeGamemode = 1;
                 public static int AirJump = 16777473;
-                public static int Rapidhit = 0;
+                public static int Rapidhit = 1;
             }
         }
 
@@ -117,8 +117,8 @@ namespace Electron
                 public static bool gbutton_module_airjump = false;
                 public static bool gbutton_module_speed = false;
                 public static bool gbutton_module_glide = true;
-                public static bool gbutton_module_rapidhit = true;
-                public static bool gbutton_module_nofall = true;
+                public static bool gbutton_module_rapidhit = false;
+                public static bool gbutton_module_nofall = false;
                 public static bool gbutton_module_fallfromhightplace = false;
                 public static bool gbutton_module_showcoordinates = true;
                 public static bool gbutton_module_fakegamemode = true;

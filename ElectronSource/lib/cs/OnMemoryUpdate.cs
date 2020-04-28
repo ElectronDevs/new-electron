@@ -136,7 +136,7 @@ namespace Electron
                     {
                         try
                         {
-                            m.writeMemory(Data.Pointer.Nofall, "float", "0");
+                            m.writeMemory(Data.Pointer.Nofall, "float", "20");
                         }
                         catch
                         {
