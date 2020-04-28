@@ -24,7 +24,7 @@
                     <StackPanel x:Name="Stackpanel_Titelbar" HorizontalAlignment="Left" Margin="0" Height="30" Orientation="Horizontal">
                         <Label Content="Electron Client" Foreground="White" Margin="10,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                         <Label Content="v3.1.2 BETA" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
-                        <Label Content="by CXCubeHD/Okuchi" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
+                        <Label Content="by Electron Dev Team" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                     </StackPanel>
                 </Grid>
                 <Grid x:Name="UI" Margin="-1,30,0,0">
@@ -130,7 +130,7 @@
                                         </Grid>
                                         <Grid x:Name="qq_fakegamemode" VerticalAlignment="Top" Height="60" Margin="0,5,0,0">
                                             <Grid x:Name="gbutton_module_fakegamemode" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_fakegamemode_b_MouseUp">
-                                                <Border x:Name="gbutton_module_fakegamemode_b" BorderThickness="0" Background="#339600FF" CornerRadius="10,10,0,0"/>
+                                                <Border x:Name="gbutton_module_fakegamemode_b" BorderThickness="0" Background="#7F6400FF" CornerRadius="10,10,0,0"/>
                                                 <TextBlock x:Name="gbutton_module_fakegamemode_t" TextWrapping="Wrap" Text="Fake Gamemode" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                             </Grid>
                                             <Grid x:Name="qq_SelectGM" Height="30" VerticalAlignment="Top" Margin="0,30,0,0">
@@ -140,15 +140,15 @@
                                                     <ColumnDefinition Width="1*"/>
                                                 </Grid.ColumnDefinitions>
                                                 <Grid x:Name="gbutton_module_fakecreative_radiobutton_0" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_fakegamemode_0_b_MouseUp">
-                                                    <Border x:Name="gbutton_module_fakecreative_radiobutton_0_b" BorderThickness="0" Background="#7F646464" CornerRadius="0,0,0,10"/>
+                                                    <Border x:Name="gbutton_module_fakecreative_radiobutton_0_b" BorderThickness="0" Background="#7F6400FF" CornerRadius="0,0,0,10"/>
                                                     <TextBlock x:Name="gbutton_module_fakecreative_radiobutton_0_t" TextWrapping="Wrap" Text="Survival" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                                 </Grid>
                                                 <Grid x:Name="gbutton_module_fakecreative_radiobutton_1" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_fakegamemode_1_b_MouseUp" Grid.Column="1">
-                                                    <Border x:Name="gbutton_module_fakecreative_radiobutton_1_b" BorderThickness="0" Background="#7F9664FF"/>
+                                                    <Border x:Name="gbutton_module_fakecreative_radiobutton_1_b" BorderThickness="0" Background="#7F6400FF"/>
                                                     <TextBlock x:Name="gbutton_module_fakecreative_radiobutton_1_t" TextWrapping="Wrap" Text="Creative" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                                 </Grid>
                                                 <Grid x:Name="gbutton_module_fakecreative_radiobutton_2" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_fakegamemode_2_b_MouseUp" Grid.Column="2">
-                                                    <Border x:Name="gbutton_module_fakecreative_radiobutton_2_b" BorderThickness="0" Background="#7F646464" CornerRadius="0,0,10,0"/>
+                                                    <Border x:Name="gbutton_module_fakecreative_radiobutton_2_b" BorderThickness="0" Background="#7F6400FF" CornerRadius="0,0,10,0"/>
                                                     <TextBlock x:Name="gbutton_module_fakecreative_radiobutton_2_t" TextWrapping="Wrap" Text="Adventure" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                                 </Grid>
                                             </Grid>
