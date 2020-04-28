@@ -71,7 +71,7 @@ namespace Electron
                     {
                         try
                         {
-                            m.writeMemory(Data.Pointer.Rapidhit, "byte", "0x00");
+                            m.writeMemory(Data.Pointer.Rapidhit, "byte", "0x0");
                         }
                         catch
                         {
