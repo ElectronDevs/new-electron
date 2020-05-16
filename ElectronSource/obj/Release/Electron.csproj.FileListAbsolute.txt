@@ -1,0 +1,16 @@
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\Electron.exe.config
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\Electron.exe
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\Electron.pdb
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.csprojAssemblyReference.cache
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\ElectronClient.g.cs
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\App.g.cs
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron_MarkupCompile.cache
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron_MarkupCompile.lref
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\App.baml
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\ElectronClient.baml
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.g.resources
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.Properties.Resources.resources
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.csproj.GenerateResource.cache
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.csproj.CoreCompileInputs.cache
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.exe
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.pdb
