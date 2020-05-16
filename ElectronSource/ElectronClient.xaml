@@ -23,7 +23,7 @@
                     </StackPanel>
                     <StackPanel x:Name="Stackpanel_Titelbar" HorizontalAlignment="Left" Margin="0" Height="30" Orientation="Horizontal">
                         <Label Content="Electron Client" Foreground="White" Margin="10,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
-                        <Label Content="v3.1.2 BETA" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
+                        <Label Content="v3.1.2" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                         <Label Content="by Electron Dev Team" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                     </StackPanel>
                 </Grid>
@@ -74,6 +74,10 @@
                                         <Grid x:Name="gbutton_module_airjump" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_airjump_b_MouseUp">
                                             <Border x:Name="gbutton_module_airjump_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_airjump_t" TextWrapping="Wrap" Text="AirJump" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
+                                        <Grid x:Name="gbutton_module_bhop" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_bhop_b_MouseUp">
+                                            <Border x:Name="gbutton_module_bhop_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_bhop_t" TextWrapping="Wrap" Text="Bhop" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
                                         <Grid x:Name="qq_Speed" Margin="0,5,0,0">
                                             <Border x:Name="gbutton_module_speed_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>

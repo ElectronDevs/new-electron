@@ -31,7 +31,7 @@ namespace Electron
             public static string VelocityY = "Minecraft.Windows.exe+03055638,0x0,0xC8,0x18,0xA8";
 
             // Onground
-            public static string Onground = "Minecraft.Windows.exe+03090F38,0x18,0x20,0x60,0x568,0x1108,0x70,0x78,0x178";
+            public static string Onground = "Minecraft.Windows.exe+0x3022668,0x30,0x28,0x8,0x1F8,0x1F0,0x0,0xF0,0x178";
 
             // Speed
             public static string Speed = "Minecraft.Windows.exe+03055638,0xa8,0x18,0xc8,0x438,0x18,0xe0,0x8,0x9c";
@@ -39,8 +39,11 @@ namespace Electron
             // Rapidhit
             public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x598,0x700,0x288,0x88,0x50";
 
+            // bhop
+            public static string bhop = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
+
             // Nofall
-            public static string Nofall = "Minecraft.Windows.exe+030506A8,0xC8,0x30,0x0,0x0,0x438,0x18,0x20,0x9C";
+            public static string Nofall = "Minecraft.Windows.exe+1216D73,0xC6,0x83,0x94,0x1,0x0,0x0,0x0,0x90";
 
             // IngameCoordinates
             public static string ShowCoordinates = "Minecraft.Windows.exe+0x297FF18,0x58,0x10,0x150,0x9a4";
@@ -59,6 +62,7 @@ namespace Electron
             {
                 public static bool ChangeOnNextCheck = false;
                 public static bool Airjump = false;
+                public static bool bhop = false;
                 public static bool Speed = false;
                 public static bool Rapidhit = false;
                 public static bool Nofall = false;
@@ -86,6 +90,7 @@ namespace Electron
             public static Key ShowCoordinates = Key.NumPad7;
             public static Key FakeCreative = Key.NumPad4;
             public static Key Glide = Key.F;
+            public static Key bhop = Key.R;
         }
 
         public static class ClientSettings
@@ -97,8 +102,8 @@ namespace Electron
         {
             public static class gbutton
             {
-                public static string on = "#9400D3";
-                public static string off = "#7F6400FF";
+                public static string on = "#12343b";
+                public static string off = "#161748";
                 public static string locked = "#7F646464";
                 public static string trigger = "#7F6400FF";
             }
@@ -115,12 +120,13 @@ namespace Electron
             public static class Locked
             {
                 public static bool gbutton_module_airjump = false;
+                public static bool gbutton_module_bhop = false;
                 public static bool gbutton_module_speed = false;
                 public static bool gbutton_module_glide = true;
                 public static bool gbutton_module_rapidhit = false;
                 public static bool gbutton_module_nofall = false;
                 public static bool gbutton_module_fallfromhightplace = false;
-                public static bool gbutton_module_showcoordinates = true;
+                public static bool gbutton_module_showcoordinates = false;
                 public static bool gbutton_module_fakegamemode = false;
                 public static bool gbutton_module_teleport = false;
             }
