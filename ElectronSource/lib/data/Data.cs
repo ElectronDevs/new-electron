@@ -37,13 +37,16 @@ namespace Electron
             public static string Speed = "Minecraft.Windows.exe+03055638,0xa8,0x18,0xc8,0x438,0x18,0xe0,0x8,0x9c";
 
             // Rapidhit
-            public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x598,0x700,0x288,0x88,0x50";
+            public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
 
             // bhop
             public static string bhop = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
 
+            // step
+            public static string step = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
+
             // Nofall
-            public static string Nofall = "Minecraft.Windows.exe+1216D73,0xC6,0x83,0x94,0x1,0x0,0x0,0x0,0x90";
+            public static string Nofall = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
 
             // IngameCoordinates
             public static string ShowCoordinates = "Minecraft.Windows.exe+0x297FF18,0x58,0x10,0x150,0x9a4";
@@ -63,6 +66,7 @@ namespace Electron
                 public static bool ChangeOnNextCheck = false;
                 public static bool Airjump = false;
                 public static bool bhop = false;
+                public static bool step = false;
                 public static bool Speed = false;
                 public static bool Rapidhit = false;
                 public static bool Nofall = false;
@@ -83,7 +87,7 @@ namespace Electron
 
         public static class DefaultHotKeyProfiles
         {
-            public static Key AirJump = Key.NumPad9;
+            public static Key AirJump = Key.L;
             public static Key Speed = Key.P;
             public static Key Rapidhit = Key.NumPad0;
             public static Key Nofall = Key.NumPad1;
@@ -91,6 +95,7 @@ namespace Electron
             public static Key FakeCreative = Key.NumPad4;
             public static Key Glide = Key.F;
             public static Key bhop = Key.R;
+            public static Key step = Key.M;
         }
 
         public static class ClientSettings
@@ -120,6 +125,7 @@ namespace Electron
             public static class Locked
             {
                 public static bool gbutton_module_airjump = false;
+                public static bool gbutton_module_step= true;
                 public static bool gbutton_module_bhop = false;
                 public static bool gbutton_module_speed = false;
                 public static bool gbutton_module_glide = true;

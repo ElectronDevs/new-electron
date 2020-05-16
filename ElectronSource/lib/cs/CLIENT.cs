@@ -40,7 +40,13 @@ namespace Electron
 
                     if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.bhop))
                     {
-                        Data.Module.Status.bhop = !Data.Module.Status.bhop;
+                        
+                        Thread.Sleep(300);
+                    }
+
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.step))
+                    {
+                        Data.Module.Status.step = !Data.Module.Status.step;
                         Thread.Sleep(300);
                     }
 
@@ -96,7 +102,8 @@ namespace Electron
                 {
                     public static Key Speed = Data.DefaultHotKeyProfiles.Speed;
                     public static Key AirJump = Data.DefaultHotKeyProfiles.AirJump;
-                    public static Key bhop = Data.DefaultHotKeyProfiles.Speed;
+                    public static Key bhop = Data.DefaultHotKeyProfiles.bhop;
+                    public static Key step = Data.DefaultHotKeyProfiles.step;
                     public static Key Rapidhit = Data.DefaultHotKeyProfiles.Rapidhit;
                     public static Key Nofall = Data.DefaultHotKeyProfiles.Nofall;
                     public static Key ShowCoordinates = Data.DefaultHotKeyProfiles.ShowCoordinates;

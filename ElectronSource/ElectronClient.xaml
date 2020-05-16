@@ -79,6 +79,10 @@
                                             <Border x:Name="gbutton_module_bhop_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_bhop_t" TextWrapping="Wrap" Text="Bhop" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
+                                        <Grid x:Name="gbutton_module_step" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_step_b_MouseUp">
+                                            <Border x:Name="gbutton_module_step_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_step_t" TextWrapping="Wrap" Text="Step" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
                                         <Grid x:Name="qq_Speed" Margin="0,5,0,0">
                                             <Border x:Name="gbutton_module_speed_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_Speed_t" TextWrapping="Wrap" Text="Speed" HorizontalAlignment="Center" Foreground="White" FontSize="18" Margin="0,0,0,42" VerticalAlignment="Center"/>
