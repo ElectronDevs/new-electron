@@ -75,6 +75,10 @@
                                             <Border x:Name="gbutton_module_airjump_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_airjump_t" TextWrapping="Wrap" Text="AirJump" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
+                                        <Grid x:Name="gbutton_module_highjump" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_highjump_b_MouseUp">
+                                            <Border x:Name="gbutton_module_highjump_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_highjump_t" TextWrapping="Wrap" Text="HighJump" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
                                         <Grid x:Name="gbutton_module_bhop" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_bhop_b_MouseUp">
                                             <Border x:Name="gbutton_module_bhop_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_bhop_t" TextWrapping="Wrap" Text="Bhop" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
@@ -82,6 +86,10 @@
                                         <Grid x:Name="gbutton_module_step" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_step_b_MouseUp">
                                             <Border x:Name="gbutton_module_step_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_step_t" TextWrapping="Wrap" Text="Step" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
+                                        <Grid x:Name="gbutton_module_phase" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_phase_b_MouseUp">
+                                            <Border x:Name="gbutton_module_phase_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_phase_t" TextWrapping="Wrap" Text="Phase" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
                                         <Grid x:Name="qq_Speed" Margin="0,5,0,0">
                                             <Border x:Name="gbutton_module_speed_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
@@ -114,6 +122,10 @@
                                             <Border x:Name="gbutton_module_killaura_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_killaura_t" TextWrapping="Wrap" Text="KillAura" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
+                                        <Grid x:Name="gbutton_module_noknockback" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_noknockback_b_MouseUp">
+                                            <Border x:Name="gbutton_module_noknockback_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_noknockback_t" TextWrapping="Wrap" Text="NoKnockback" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
                                         </StackPanel>
                                     <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
@@ -128,6 +140,10 @@
                                         <Grid x:Name="gbutton_module_instabreak" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_instabreak_b_MouseUp">
                                             <Border x:Name="gbutton_module_instabreak_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_instabreak_t" TextWrapping="Wrap" Text="Instabreak" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
+                                        <Grid x:Name="gbutton_module_reach" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_reach_b_MouseUp">
+                                            <Border x:Name="gbutton_module_reach_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_reach_t" TextWrapping="Wrap" Text="Reach" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
                                         <Grid x:Name="gbutton_module_fullbright" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_fullbright_b_MouseUp">
                                             <Border x:Name="gbutton_module_fullbright_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
@@ -182,7 +198,7 @@
 
                                 <Grid>
                                     <StackPanel Margin="10,0">
-                                        <Label Content="X, Y, Z         use ~ to mark your relativ position" VerticalAlignment="Top" Margin="0,5,0,0" Height="30" Foreground="White" FontWeight="Bold" Background="{x:Null}" HorizontalAlignment="Center"/>
+                                        <Label Content="X, Y, Z         use ~ to mark your relative position" VerticalAlignment="Top" Margin="0,5,0,0" Height="30" Foreground="White" FontWeight="Bold" Background="{x:Null}" HorizontalAlignment="Center"/>
                                         <StackPanel VerticalAlignment="Top" Margin="0">
                                             <TextBox x:Name="textbox_module_teleport_x" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#7F6400FF" Foreground="White" Margin="0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="11"/>
                                             <TextBox x:Name="textbox_module_teleport_y" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#7F6400FF" Foreground="White" Margin="0,5,0,0" FontSize="20" CaretBrush="Red" UndoLimit="10" MaxLength="5"/>
@@ -197,7 +213,7 @@
                                     <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10" Margin="0"/>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="More" Background="{x:Null}" Foreground="White">
+                            <TabItem Header="Other" Background="{x:Null}" Foreground="White">
                                 <Grid>
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
                                         <CheckBox x:Name="checkbox_trigger_clientsettings_enabledevsettings" Content="Enable Dev Settings (HotKeys)" VerticalAlignment="Top" Foreground="White" Background="White" BorderBrush="#7F6400FF" FontSize="20" Margin="0"/>

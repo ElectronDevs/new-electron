@@ -38,9 +38,33 @@ namespace Electron
                         Thread.Sleep(300);
                     }
 
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.highjump))
+                    {
+                        Data.Module.Status.highjump = !Data.Module.Status.highjump;
+                        Thread.Sleep(300);
+                    }
+
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.reach))
+                    {
+                        Data.Module.Status.reach = !Data.Module.Status.reach;
+                        Thread.Sleep(300);
+                    }
+
                     if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.bhop))
                     {
                         
+                        Thread.Sleep(300);
+                    }
+
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.reach))
+                    {
+
+                        Thread.Sleep(300);
+                    }
+
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.noknockback))
+                    {
+
                         Thread.Sleep(300);
                     }
 
@@ -53,6 +77,12 @@ namespace Electron
                     if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.step))
                     {
                         Data.Module.Status.step = !Data.Module.Status.step;
+                        Thread.Sleep(300);
+                    }
+
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.phase))
+                    {
+                        Data.Module.Status.phase = !Data.Module.Status.phase;
                         Thread.Sleep(300);
                     }
 
@@ -118,6 +148,10 @@ namespace Electron
                 public static class Modules
                 {
                     public static Key Speed = Data.DefaultHotKeyProfiles.Speed;
+                    public static Key reach = Data.DefaultHotKeyProfiles.reach;
+                    public static Key phase = Data.DefaultHotKeyProfiles.phase;
+                    public static Key noknockback = Data.DefaultHotKeyProfiles.noknockback;
+                    public static Key highjump = Data.DefaultHotKeyProfiles.highjump;
                     public static Key fullbright = Data.DefaultHotKeyProfiles.fullbright;
                     public static Key instabreak = Data.DefaultHotKeyProfiles.instabreak;
                     public static Key killaura = Data.DefaultHotKeyProfiles.killaura;

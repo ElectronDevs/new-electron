@@ -39,20 +39,35 @@ namespace Electron
             // Rapidhit -dont work
             public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
 
+            // highjump -dont work
+            public static string highjump = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
+
             // bhop -dont work
             public static string bhop = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
+
+            // instabreak -dont work
+            public static string instabreak = "Minecraft.Windows.exe+0x14A6125,0x20,0x57,0x11,0x0F,0xF3";
 
             // step -dont work
             public static string step = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
 
+            // reach -dont work
+            public static string reach = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
+
             // Nofall -dont work
             public static string Nofall = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
-             
+
+            // Noknockback -dont work
+            public static string noknockback = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
+
             // IngameCoordinates -dont work
             public static string ShowCoordinates = "Minecraft.Windows.exe+0x297FF18,0x58,0x10,0x150,0x9a4";
 
             // killaura -dont work
             public static string killaura = "Minecraft.Windows.exe+0x297FF18,0x58,0x10,0x150,0x9a4";
+
+            // fullbright -dont work
+            public static string fullbright = "Minecraft.Windows.exe+0x2FFECD8,0xC0,0x20,0xB0,0x138,0xF0";
 
             // FakeCreative (1/2) -dont work
             public static string FakeGamemode = "Minecraft.Windows.exe+0x0297FFB0,0x1E74";
@@ -68,11 +83,15 @@ namespace Electron
             {
                 public static bool ChangeOnNextCheck = false;
                 public static bool Airjump = false;
+                public static bool reach = false;
                 public static bool fullbright = false;
+                public static bool highjump = false;
                 public static bool bhop = false;
                 public static bool killaura = false;
                 public static bool step = false;
                 public static bool instabreak = false;
+                public static bool noknockback = false;
+                public static bool phase = false;
                 public static bool Speed = false;
                 public static bool Rapidhit = false;
                 public static bool Nofall = false;
@@ -85,6 +104,8 @@ namespace Electron
             {
                 public static float Speed = 0.1000000015f;
                 public static float GlideVelocityY = 0.02f;
+                public static float fullbright = 10f;
+                public static float reach = 7f;
                 public static int FakeGamemode = 1;
                 public static int AirJump = 16777473;
                 public static int Rapidhit = 0x1;
@@ -94,10 +115,13 @@ namespace Electron
         public static class DefaultHotKeyProfiles
         {
             public static Key AirJump = Key.L;
-            public static Key Speed = Key.P;
+            public static Key highjump = Key.NumPad4;
+            public static Key reach = Key.NumPad2;
+            public static Key Speed = Key.NumPad8;
             public static Key fullbright = Key.N;
             public static Key Rapidhit = Key.NumPad0;
             public static Key Nofall = Key.NumPad1;
+            public static Key noknockback = Key.NumPad3;
             public static Key ShowCoordinates = Key.NumPad7;
             public static Key FakeCreative = Key.NumPad4;
             public static Key Glide = Key.F;
@@ -105,6 +129,7 @@ namespace Electron
             public static Key step = Key.M;
             public static Key killaura = Key.O;
             public static Key instabreak = Key.J;
+            public static Key phase = Key.P;
         }
 
         public static class ClientSettings
@@ -116,8 +141,8 @@ namespace Electron
         {
             public static class gbutton
             {
-                public static string on = "#12343b";
-                public static string off = "#161748";
+                public static string on = "#3e9fb3";
+                public static string off = "#12343b";
                 public static string locked = "#7F646464";
                 public static string trigger = "#7F6400FF";
             }
@@ -133,17 +158,21 @@ namespace Electron
         {
             public static class Locked
             {
-                public static bool gbutton_module_airjump = false;
+                public static bool gbutton_module_airjump = true;
                 public static bool gbutton_module_killaura = true;
+                public static bool gbutton_module_highjump = true;
+                public static bool gbutton_module_noknockback = true;
+                public static bool gbutton_module_phase = true;
+                public static bool gbutton_module_reach = true;
                 public static bool gbutton_module_fullbright = true;
                 public static bool gbutton_module_instabreak = true;
                 public static bool gbutton_module_step= true;
-                public static bool gbutton_module_bhop = false;
+                public static bool gbutton_module_bhop = true;
                 public static bool gbutton_module_speed = false;
                 public static bool gbutton_module_glide = true;
-                public static bool gbutton_module_rapidhit = false;
-                public static bool gbutton_module_nofall = false;
-                public static bool gbutton_module_fallfromhightplace = false;
+                public static bool gbutton_module_rapidhit = true;
+                public static bool gbutton_module_nofall = true;
+                public static bool gbutton_module_fallfromhightplace = true;
                 public static bool gbutton_module_showcoordinates = true;
                 public static bool gbutton_module_fakegamemode = true;
                 public static bool gbutton_module_teleport = false;
