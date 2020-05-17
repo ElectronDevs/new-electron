@@ -23,8 +23,8 @@
                     </StackPanel>
                     <StackPanel x:Name="Stackpanel_Titelbar" HorizontalAlignment="Left" Margin="0" Height="30" Orientation="Horizontal">
                         <Label Content="Electron Client" Foreground="White" Margin="10,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
-                        <Label Content="v3.1.2" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
-                        <Label Content="by Electron Dev Team" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
+                        <Label Content="v3.2.0" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
+                        <Label Content="by The Electron Dev Team" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                     </StackPanel>
                 </Grid>
                 <Grid x:Name="UI" Margin="-1,30,0,0">
@@ -110,7 +110,11 @@
                                             <Border x:Name="gbutton_module_rapidhit_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_rapidhit_t" TextWrapping="Wrap" Text="RapidHit" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
-                                    </StackPanel>
+                                        <Grid x:Name="gbutton_module_killaura" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_killaura_b_MouseUp">
+                                            <Border x:Name="gbutton_module_killaura_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_killaura_t" TextWrapping="Wrap" Text="KillAura" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
+                                        </StackPanel>
                                     <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
                             </TabItem>
@@ -121,15 +125,20 @@
                                             <Border x:Name="gbutton_module_nofall_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_nofall_t" TextWrapping="Wrap" Text="Nofall (Nofalldamage)" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
+                                        <Grid x:Name="gbutton_module_instabreak" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_instabreak_b_MouseUp">
+                                            <Border x:Name="gbutton_module_instabreak_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_instabreak_t" TextWrapping="Wrap" Text="Instabreak" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
                                         <Grid x:Name="gbutton_trigger_module_fallfromheightplace" Height="30" MouseUp="Gbutton_module_fallfromhightplace_b_MouseUp" Margin="0,5,0,0">
                                             <Border x:Name="gbutton_trigger_module_fallfromhightplace_b" BorderThickness="1" Height="30" CornerRadius="10" Background="#7F6400FF"/>
                                             <Label x:Name="gbutton_trigger_module_fallfromheightplace_t" Content="Fall from hight place (Kill yourself)" VerticalAlignment="Top" Margin="0" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Background="{x:Null}" Foreground="White" Height="30"/>
                                         </Grid>
+                                        
                                     </StackPanel>
                                     <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="Game" Background="{x:Null}" Foreground="White">
+                            <TabItem Header="World" Background="{x:Null}" Foreground="White">
                                 <Grid>
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
                                         <Grid x:Name="gbutton_module_showcoordinates" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_showcoordinates_b_MouseUp">

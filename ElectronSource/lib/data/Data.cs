@@ -66,7 +66,9 @@ namespace Electron
                 public static bool ChangeOnNextCheck = false;
                 public static bool Airjump = false;
                 public static bool bhop = false;
+                public static bool killaura = false;
                 public static bool step = false;
+                public static bool instabreak = false;
                 public static bool Speed = false;
                 public static bool Rapidhit = false;
                 public static bool Nofall = false;
@@ -96,6 +98,8 @@ namespace Electron
             public static Key Glide = Key.F;
             public static Key bhop = Key.R;
             public static Key step = Key.M;
+            public static Key killaura = Key.O;
+            public static Key instabreak = Key.J;
         }
 
         public static class ClientSettings
@@ -125,6 +129,8 @@ namespace Electron
             public static class Locked
             {
                 public static bool gbutton_module_airjump = false;
+                public static bool gbutton_module_killaura = true;
+                public static bool gbutton_module_instabreak = true;
                 public static bool gbutton_module_step= true;
                 public static bool gbutton_module_bhop = false;
                 public static bool gbutton_module_speed = false;
@@ -132,8 +138,8 @@ namespace Electron
                 public static bool gbutton_module_rapidhit = false;
                 public static bool gbutton_module_nofall = false;
                 public static bool gbutton_module_fallfromhightplace = false;
-                public static bool gbutton_module_showcoordinates = false;
-                public static bool gbutton_module_fakegamemode = false;
+                public static bool gbutton_module_showcoordinates = true;
+                public static bool gbutton_module_fakegamemode = true;
                 public static bool gbutton_module_teleport = false;
             }
         }

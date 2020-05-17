@@ -141,7 +141,9 @@ namespace Electron
         {
             UpdateColorOfGButton(this.gbutton_module_airjump_b, Module.Status.Airjump, GButtonStatus.Locked.gbutton_module_airjump);
             UpdateColorOfGButton(this.gbutton_module_bhop_b, Module.Status.bhop, GButtonStatus.Locked.gbutton_module_bhop);
+            UpdateColorOfGButton(this.gbutton_module_instabreak_b, Module.Status.instabreak, GButtonStatus.Locked.gbutton_module_instabreak);
             UpdateColorOfGButton(this.gbutton_module_step_b, Module.Status.step, GButtonStatus.Locked.gbutton_module_step);
+            UpdateColorOfGButton(this.gbutton_module_killaura_b, Module.Status.killaura, GButtonStatus.Locked.gbutton_module_killaura);
             UpdateColorOfGButton(this.gbutton_module_speed_b, Module.Status.Speed, GButtonStatus.Locked.gbutton_module_speed);
             UpdateColorOfGButton(this.gbutton_module_glide_b, Module.Status.Glide, GButtonStatus.Locked.gbutton_module_glide);
             UpdateColorOfGButton(this.gbutton_module_rapidhit_b, Module.Status.Rapidhit, GButtonStatus.Locked.gbutton_module_rapidhit);
@@ -229,11 +231,27 @@ namespace Electron
             }
         }
 
+        private void Gbutton_module_instabreak_b_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (!GButtonStatus.Locked.gbutton_module_instabreak)
+            {
+                Module.Status.instabreak = !Module.Status.instabreak;
+            }
+        }
+
         private void Gbutton_module_bhop_b_MouseUp(object sender, MouseButtonEventArgs e)
         {
             if (!GButtonStatus.Locked.gbutton_module_bhop)
             {
                 Module.Status.bhop = !Module.Status.bhop;
+            }
+        }
+
+        private void Gbutton_module_killaura_b_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (!GButtonStatus.Locked.gbutton_module_killaura)
+            {
+                Module.Status.killaura = !Module.Status.killaura;
             }
         }
 
