@@ -221,7 +221,7 @@
                                             <Border x:Name="gbutton_trigger_module_tp_b" BorderThickness="1" Height="30" CornerRadius="10" Background="#7F6400FF"/>
                                             <Label x:Name="gbutton_trigger_module_tp_t" Content="Teleport" VerticalAlignment="Top" Margin="0" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Background="{x:Null}" Foreground="White" Height="30"/>
                                         </Grid>
-                                        <TextBlock x:Name="textblock_module_teleport_errorshower" TextWrapping="Wrap" Text="There was an error at reading the position" VerticalAlignment="Top" Margin="0,5,0,0" Foreground="Red"/>
+                                        <TextBlock x:Name="textblock_module_teleport_errorshower" TextWrapping="Wrap" Text="Position Error. Probably not errored, stupid damn code" VerticalAlignment="Top" Margin="0,5,0,0" Foreground="Red"/>
                                     </StackPanel>
                                     <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="10" Margin="0"/>
                                 </Grid>
