@@ -45,6 +45,9 @@ namespace Electron
             // bhop -dont work
             public static string bhop = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
 
+            // aimbot -dont work
+            public static string aimbot = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
+
             // instabreak -dont work
             public static string instabreak = "Minecraft.Windows.exe+0x14A6125,0x20,0x57,0x11,0x0F,0xF3";
 
@@ -88,6 +91,7 @@ namespace Electron
                 public static bool highjump = false;
                 public static bool bhop = false;
                 public static bool killaura = false;
+                public static bool aimbot = false;
                 public static bool step = false;
                 public static bool instabreak = false;
                 public static bool noknockback = false;
@@ -119,7 +123,8 @@ namespace Electron
             public static Key reach = Key.NumPad2;
             public static Key Speed = Key.NumPad8;
             public static Key fullbright = Key.N;
-            public static Key Rapidhit = Key.NumPad0;
+            public static Key aimbot = Key.NumPad8;
+            public static Key Rapidhit = Key.NumPad5;
             public static Key Nofall = Key.NumPad1;
             public static Key noknockback = Key.NumPad3;
             public static Key ShowCoordinates = Key.NumPad7;
@@ -164,6 +169,7 @@ namespace Electron
                 public static bool gbutton_module_noknockback = true;
                 public static bool gbutton_module_phase = true;
                 public static bool gbutton_module_reach = true;
+                public static bool gbutton_module_aimbot = true;
                 public static bool gbutton_module_fullbright = true;
                 public static bool gbutton_module_instabreak = true;
                 public static bool gbutton_module_step= true;

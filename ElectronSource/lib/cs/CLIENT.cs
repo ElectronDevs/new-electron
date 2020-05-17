@@ -62,6 +62,12 @@ namespace Electron
                         Thread.Sleep(300);
                     }
 
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.aimbot))
+                    {
+
+                        Thread.Sleep(300);
+                    }
+
                     if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.noknockback))
                     {
 
@@ -150,6 +156,7 @@ namespace Electron
                     public static Key Speed = Data.DefaultHotKeyProfiles.Speed;
                     public static Key reach = Data.DefaultHotKeyProfiles.reach;
                     public static Key phase = Data.DefaultHotKeyProfiles.phase;
+                    public static Key aimbot = Data.DefaultHotKeyProfiles.aimbot;
                     public static Key noknockback = Data.DefaultHotKeyProfiles.noknockback;
                     public static Key highjump = Data.DefaultHotKeyProfiles.highjump;
                     public static Key fullbright = Data.DefaultHotKeyProfiles.fullbright;
