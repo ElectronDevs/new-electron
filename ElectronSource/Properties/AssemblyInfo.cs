@@ -8,12 +8,12 @@ using System.Windows;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("Electron")]
-[assembly: AssemblyDescription("A minecraft hack client by cxcubehd")]
+[assembly: AssemblyDescription("Minecraft Client")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ccx games")]
+[assembly: AssemblyCompany("Silver Horse Studios")]
 [assembly: AssemblyProduct("Electron")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("ccxgames")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyTrademark("Silver Horse Studios")]
 [assembly: AssemblyCulture("")]
 
 // Durch Festlegen von ComVisible auf FALSE werden die Typen in dieser Assembly

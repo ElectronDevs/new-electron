@@ -140,6 +140,7 @@ namespace Electron
         private void UpdateGButtons()
         {
             UpdateColorOfGButton(this.gbutton_module_airjump_b, Module.Status.Airjump, GButtonStatus.Locked.gbutton_module_airjump);
+            UpdateColorOfGButton(this.gbutton_module_fullbright_b, Module.Status.fullbright, GButtonStatus.Locked.gbutton_module_fullbright);
             UpdateColorOfGButton(this.gbutton_module_bhop_b, Module.Status.bhop, GButtonStatus.Locked.gbutton_module_bhop);
             UpdateColorOfGButton(this.gbutton_module_instabreak_b, Module.Status.instabreak, GButtonStatus.Locked.gbutton_module_instabreak);
             UpdateColorOfGButton(this.gbutton_module_step_b, Module.Status.step, GButtonStatus.Locked.gbutton_module_step);
@@ -244,6 +245,14 @@ namespace Electron
             if (!GButtonStatus.Locked.gbutton_module_bhop)
             {
                 Module.Status.bhop = !Module.Status.bhop;
+            }
+        }
+
+        private void Gbutton_module_fullbright_b_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (!GButtonStatus.Locked.gbutton_module_fullbright)
+            {
+                Module.Status.fullbright = !Module.Status.fullbright;
             }
         }
 

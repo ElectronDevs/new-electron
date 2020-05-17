@@ -44,6 +44,12 @@ namespace Electron
                         Thread.Sleep(300);
                     }
 
+                    if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.fullbright))
+                    {
+
+                        Thread.Sleep(300);
+                    }
+
                     if (Keyboard.IsKeyDown(Data.DefaultHotKeyProfiles.step))
                     {
                         Data.Module.Status.step = !Data.Module.Status.step;
@@ -112,6 +118,7 @@ namespace Electron
                 public static class Modules
                 {
                     public static Key Speed = Data.DefaultHotKeyProfiles.Speed;
+                    public static Key fullbright = Data.DefaultHotKeyProfiles.fullbright;
                     public static Key instabreak = Data.DefaultHotKeyProfiles.instabreak;
                     public static Key killaura = Data.DefaultHotKeyProfiles.killaura;
                     public static Key AirJump = Data.DefaultHotKeyProfiles.AirJump;

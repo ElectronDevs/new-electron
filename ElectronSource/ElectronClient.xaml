@@ -129,6 +129,10 @@
                                             <Border x:Name="gbutton_module_instabreak_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
                                             <TextBlock x:Name="gbutton_module_instabreak_t" TextWrapping="Wrap" Text="Instabreak" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
+                                        <Grid x:Name="gbutton_module_fullbright" Height="30" VerticalAlignment="Top" Margin="0" MouseUp="Gbutton_module_fullbright_b_MouseUp">
+                                            <Border x:Name="gbutton_module_fullbright_b" BorderBrush="Black" BorderThickness="1" Background="#339600FF" CornerRadius="10"/>
+                                            <TextBlock x:Name="gbutton_module_fullbright_t" TextWrapping="Wrap" Text="Fullbright" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                                        </Grid>
                                         <Grid x:Name="gbutton_trigger_module_fallfromheightplace" Height="30" MouseUp="Gbutton_module_fallfromhightplace_b_MouseUp" Margin="0,5,0,0">
                                             <Border x:Name="gbutton_trigger_module_fallfromhightplace_b" BorderThickness="1" Height="30" CornerRadius="10" Background="#7F6400FF"/>
                                             <Label x:Name="gbutton_trigger_module_fallfromheightplace_t" Content="Fall from hight place (Kill yourself)" VerticalAlignment="Top" Margin="0" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Background="{x:Null}" Foreground="White" Height="30"/>

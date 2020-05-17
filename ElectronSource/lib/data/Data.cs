@@ -27,34 +27,37 @@ namespace Electron
             public static string Pos2Y = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x468";
             public static string Pos2Z = "Minecraft.Windows.exe+0x3055618,0xA8,0x18,0xC8,0x46C";
 
-            // Velocity
+            // Velocity -idk if this shit works, it its glide, uh no
             public static string VelocityY = "Minecraft.Windows.exe+03055638,0x0,0xC8,0x18,0xA8";
 
-            // Onground
+            // Onground -dont work anymore
             public static string Onground = "Minecraft.Windows.exe+0x3022668,0x30,0x28,0x8,0x1F8,0x1F0,0x0,0xF0,0x178";
 
-            // Speed
+            // Speed -works
             public static string Speed = "Minecraft.Windows.exe+03055638,0xa8,0x18,0xc8,0x438,0x18,0xe0,0x8,0x9c";
 
-            // Rapidhit
+            // Rapidhit -dont work
             public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
 
-            // bhop
+            // bhop -dont work
             public static string bhop = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
 
-            // step
+            // step -dont work
             public static string step = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
 
-            // Nofall
+            // Nofall -dont work
             public static string Nofall = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
-
-            // IngameCoordinates
+             
+            // IngameCoordinates -dont work
             public static string ShowCoordinates = "Minecraft.Windows.exe+0x297FF18,0x58,0x10,0x150,0x9a4";
 
-            // FakeCreative (1/2)
+            // killaura -dont work
+            public static string killaura = "Minecraft.Windows.exe+0x297FF18,0x58,0x10,0x150,0x9a4";
+
+            // FakeCreative (1/2) -dont work
             public static string FakeGamemode = "Minecraft.Windows.exe+0x0297FFB0,0x1E74";
 
-            // FakeCrative Help (2/2)
+            // FakeCrative Help (2/2) -cube wtf is this
             public static string FakeGamemodeHelp = "Minecraft.Windows.exe+0x0299A838,0x80,0x18,0x10,0x40,0x0,0xf98,0x0,0xc1c";
 
         }
@@ -65,6 +68,7 @@ namespace Electron
             {
                 public static bool ChangeOnNextCheck = false;
                 public static bool Airjump = false;
+                public static bool fullbright = false;
                 public static bool bhop = false;
                 public static bool killaura = false;
                 public static bool step = false;
@@ -91,6 +95,7 @@ namespace Electron
         {
             public static Key AirJump = Key.L;
             public static Key Speed = Key.P;
+            public static Key fullbright = Key.N;
             public static Key Rapidhit = Key.NumPad0;
             public static Key Nofall = Key.NumPad1;
             public static Key ShowCoordinates = Key.NumPad7;
@@ -130,6 +135,7 @@ namespace Electron
             {
                 public static bool gbutton_module_airjump = false;
                 public static bool gbutton_module_killaura = true;
+                public static bool gbutton_module_fullbright = true;
                 public static bool gbutton_module_instabreak = true;
                 public static bool gbutton_module_step= true;
                 public static bool gbutton_module_bhop = false;
