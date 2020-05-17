@@ -142,7 +142,7 @@ namespace Electron
             public static class gbutton
             {
                 public static string on = "#3e9fb3";
-                public static string off = "#12343b";
+                public static string off = "#393f4d";//12343b
                 public static string locked = "#7F646464";
                 public static string trigger = "#7F6400FF";
             }

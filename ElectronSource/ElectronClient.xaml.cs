@@ -180,7 +180,7 @@ namespace Electron
             }
 
             gbutton_b.Background = brush;
-        }
+        }//hi
 
         private void UpdateColorOfTriggerGButton(Border gbutton_b, bool IsLocked)
         {
@@ -490,5 +490,4 @@ namespace Electron
         }
 
     }
-}  
-
+}
