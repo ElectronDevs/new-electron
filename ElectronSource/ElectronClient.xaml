@@ -23,22 +23,22 @@
                     </StackPanel>
                     <StackPanel x:Name="Stackpanel_Titelbar" HorizontalAlignment="Left" Margin="0" Height="30" Orientation="Horizontal">
                         <Label Content="Electron Client" Foreground="White" Margin="10,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
-                        <Label Content="v3.2.0" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
+                        <Label Content="v3.2.2" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                         <Label Content="by The Electron Dev Team" Foreground="White" Margin="-5,0,0,0" Background="{x:Null}" FontWeight="Bold"/>
                     </StackPanel>
                 </Grid>
                 <Grid x:Name="UI" Margin="-1,30,0,0">
                     <Grid>
                         <StackPanel Height="50" Orientation="Horizontal" VerticalAlignment="Top" Margin="10,0,0,0">
-                            <Label Background="{x:Null}" Foreground="#7c00ff" Content="Game Status:" Margin="0"/>
+                            <Label Background="{x:Null}" Foreground="#ffae00" Content="Game Status:" Margin="0"/>
                             <Label x:Name="label_gamestatus" Background="{x:Null}" Foreground="Red" Margin="5,0,0,0" RenderTransformOrigin="0.833,0.743" Content="Not Found"/>
                         </StackPanel>
                     </Grid>
                     <StackPanel Height="50" VerticalAlignment="Top" Orientation="Horizontal" Margin="10,25,10,0" d:IsLocked="True">
-                        <Label Background="{x:Null}" Foreground="#7c00ff" Margin="0" RenderTransformOrigin="0.833,0.743" Height="50" FontWeight="Bold" Content="Position (X,Y,Z)"/>
-                        <Label x:Name="label_positionX" Background="{x:Null}" Foreground="#7F6400FF" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
-                        <Label x:Name="label_positionY" Background="{x:Null}" Foreground="#7F6400FF" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="70" HorizontalAlignment="Left"/>
-                        <Label x:Name="label_positionZ" Background="{x:Null}" Foreground="#7F6400FF" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
+                        <Label Background="{x:Null}" Foreground="#ffae00" Margin="0" RenderTransformOrigin="0.833,0.743" Height="50" FontWeight="Bold" Content="Position (X,Y,Z)"/>
+                        <Label x:Name="label_positionX" Background="{x:Null}" Foreground="#ffae00" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
+                        <Label x:Name="label_positionY" Background="{x:Null}" Foreground="#ffae00" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="70" HorizontalAlignment="Left"/>
+                        <Label x:Name="label_positionZ" Background="{x:Null}" Foreground="#ffae00" Margin="0" RenderTransformOrigin="0.833,0.743" Content="X" FontWeight="Bold" Width="80" HorizontalAlignment="Left"/>
 
                     </StackPanel>
                     <Grid x:Name="module_shower" Margin="0,60,0,10">
@@ -108,7 +108,7 @@
                                             <Label Content="OnGround: 0.08" Foreground="White" Margin="0,50,0,0" HorizontalAlignment="Right"/>
                                         </Grid>
                                     </StackPanel>
-                                    <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
+                                    <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
                             </TabItem>
                             <TabItem Header="Combat" Background="{x:Null}" Foreground="White">
@@ -127,7 +127,7 @@
                                             <TextBlock x:Name="gbutton_module_noknockback_t" TextWrapping="Wrap" Text="NoKnockback" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
                                         </Grid>
                                         </StackPanel>
-                                    <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
+                                    <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
                             </TabItem>
                             <TabItem Header="Player" Background="{x:Null}" Foreground="White">
@@ -155,7 +155,7 @@
                                         </Grid>
                                         
                                     </StackPanel>
-                                    <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
+                                    <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
                             </TabItem>
                             <TabItem Header="World" Background="{x:Null}" Foreground="White">
@@ -191,7 +191,7 @@
                                             </Grid>
                                         </Grid>
                                     </StackPanel>
-                                    <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
+                                    <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
                             </TabItem>
                             <TabItem Header="TP" Background="{x:Null}" Foreground="White" Height="30">
@@ -210,7 +210,7 @@
                                         </Grid>
                                         <TextBlock x:Name="textblock_module_teleport_errorshower" TextWrapping="Wrap" Text="There was an error at reading the position" VerticalAlignment="Top" Margin="0,5,0,0" Foreground="Red"/>
                                     </StackPanel>
-                                    <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10" Margin="0"/>
+                                    <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="10" Margin="0"/>
                                 </Grid>
                             </TabItem>
                             <TabItem Header="Other" Background="{x:Null}" Foreground="White">
@@ -218,7 +218,7 @@
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
                                         <CheckBox x:Name="checkbox_trigger_clientsettings_enabledevsettings" Content="Enable Dev Settings (HotKeys)" VerticalAlignment="Top" Foreground="White" Background="White" BorderBrush="#7F6400FF" FontSize="20" Margin="0"/>
                                     </StackPanel>
-                                    <Border BorderBrush="#7FFFFFFF" BorderThickness="2" CornerRadius="10"/>
+                                    <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="10"/>
                                 </Grid>
                             </TabItem>
                         </TabControl>
