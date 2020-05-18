@@ -1,4 +1,5 @@
 ﻿using Electron.lib.cs;
+using Electron.lib.data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -107,7 +109,11 @@ namespace Electron
             if (this.checkbox_trigger_clientsettings_enabledevcredits.IsChecked == true)
             {
                 Data.ClientSettings.EnableDevCredits = true;
-                MessageBox.Show("Made by Okuchi, and CXCubeHD");
+                //MessageBox.Show("Made by Okuchi, and CXCubeHD");
+                Form2 devcreditscreen = new Form2();
+                devcreditscreen.Show();
+                Data.ClientSettings.EnableDevCredits = false;
+                //Visible = true;
             }
             else
             {
