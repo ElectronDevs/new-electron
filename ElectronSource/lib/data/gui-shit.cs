@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Electron.lib.data
 {
-    class gui_stuff
+    class gui_shit
     {
     }
 }

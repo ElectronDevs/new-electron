@@ -108,7 +108,7 @@
     <Compile Include="lib\data\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="lib\data\gui-stuff.cs" />
+    <Compile Include="lib\data\gui-shit.cs" />
     <Compile Include="lib\data\Keybinds.cs" />
     <Compile Include="lib\cs\Memory.cs" />
     <Compile Include="lib\cs\MemoryRegionResult.cs" />
