@@ -14,3 +14,4 @@ C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Ele
 C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.csproj.CoreCompileInputs.cache
 C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.exe
 C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.pdb
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.lib.cs.DevCredits.resources
