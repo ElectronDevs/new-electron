@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Electron.lib.cs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -101,6 +102,16 @@ namespace Electron
             else
             {
                 Data.ClientSettings.EnableDevSettings = false;
+            }
+
+            if (this.checkbox_trigger_clientsettings_enabledevcredits.IsChecked == true)
+            {
+                Data.ClientSettings.EnableDevCredits = true;
+                MessageBox.Show("Made by Okuchi, and CXCubeHD");
+            }
+            else
+            {
+                Data.ClientSettings.EnableDevCredits = false;
             }
 
             this.label_value_module_speed.Content = "Speed Value: " + (this.slider_valueset_module_speed.Value / 100).ToString();

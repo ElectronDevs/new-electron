@@ -140,6 +140,7 @@ namespace Electron
         public static class ClientSettings
         {
             public static bool EnableDevSettings = false;
+            public static bool EnableDevCredits = false;
         }
 
         public static class DefaultColors

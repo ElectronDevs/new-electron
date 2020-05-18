@@ -102,13 +102,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="lib\cs\CLIENT.cs" />
-    <Compile Include="lib\cs\DevCredits.cs">
+    <Compile Include="lib\data\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="lib\cs\DevCredits.Designer.cs">
-      <DependentUpon>DevCredits.cs</DependentUpon>
+    <Compile Include="lib\data\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="lib\cs\Keybinds.cs" />
+    <Compile Include="lib\data\gui-stuff.cs" />
+    <Compile Include="lib\data\Keybinds.cs" />
     <Compile Include="lib\cs\Memory.cs" />
     <Compile Include="lib\cs\MemoryRegionResult.cs" />
     <Compile Include="lib\cs\OnMemoryUpdate.cs" />
@@ -132,8 +133,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="lib\cs\DevCredits.resx">
-      <DependentUpon>DevCredits.cs</DependentUpon>
+    <EmbeddedResource Include="lib\data\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -232,6 +232,9 @@
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
                                         <CheckBox x:Name="checkbox_trigger_clientsettings_enabledevsettings" Content="Enable Dev Settings (HotKeys)" VerticalAlignment="Top" Foreground="White" Background="White" BorderBrush="#7F6400FF" FontSize="20" Margin="-0.9"/>
                                     </StackPanel>
+                                    <StackPanel VerticalAlignment="Top" Margin="10,40,10,0">
+                                        <CheckBox x:Name="checkbox_trigger_clientsettings_enabledevcredits" Content="Enable Dev Credits Screen" VerticalAlignment="Top" Foreground="White" Background="White" BorderBrush="#7F6400FF" FontSize="20" Margin="-0.9"/>
+                                    </StackPanel>
                                     <Border BorderBrush="#ff001e" BorderThickness="2" CornerRadius="1"/>
                                 </Grid>
                             </TabItem>
