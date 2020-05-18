@@ -106,19 +106,19 @@ namespace Electron
                 Data.ClientSettings.EnableDevSettings = false;
             }
 
-            if (this.checkbox_trigger_clientsettings_enabledevcredits.IsChecked == true)
-            {
-                Data.ClientSettings.EnableDevCredits = true;
+            //if (this.checkbox_trigger_clientsettings_enabledevcredits.IsChecked == true)
+            //{
+                //Data.ClientSettings.EnableDevCredits = true;
                 //MessageBox.Show("Made by Okuchi, and CXCubeHD");
-                Form2 devcreditscreen = new Form2();
-                devcreditscreen.Show();
-                Data.ClientSettings.EnableDevCredits = false;
+                //Form2 devcreditscreen = new Form2();
+                //devcreditscreen.Show();
+                //ClientSettings.EnableDevCredits = false; //doesnt stop the gd spam
                 //Visible = true;
-            }
-            else
-            {
-                Data.ClientSettings.EnableDevCredits = false;
-            }
+            //}
+            //else
+            //{
+                //Data.ClientSettings.EnableDevCredits = false;
+            //}
 
             this.label_value_module_speed.Content = "Speed Value: " + (this.slider_valueset_module_speed.Value / 100).ToString();
             Data.Module.Value.Speed = (float)(this.slider_valueset_module_speed.Value / 100);
