@@ -37,8 +37,9 @@ namespace Electron
             public static string Speed = "Minecraft.Windows.exe+03055638,0xa8,0x18,0xc8,0x438,0x18,0xe0,0x8,0x9c";
 
             // Rapidhit -dont work
-            public static string Rapidhit = "Minecraft.Windows.exe+03055638,0x199,0x131,0x148,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x144,0x144";
-
+            public static string Rapidhit = "Minecraft.Windows.exe+0305ABA8,0x50,0x88,0x288,0x700,0x598";
+            //0x50,0x88,0x288,0x700,0x598
+            //0x598,0x700,0x288,0x88,0x50
             // highjump -dont work
             public static string highjump = "Minecraft.Windows.exe+0307CF18,0xF0,0x138,0xB0,0x8B0,0xC0";
 
@@ -77,7 +78,7 @@ namespace Electron
 
             // FakeCrative Help (2/2) -cube wtf is this
             public static string FakeGamemodeHelp = "Minecraft.Windows.exe+0x0299A838,0x80,0x18,0x10,0x40,0x0,0xf98,0x0,0xc1c";
-
+            //this stupid gd update broke, literally, EVERYTHING
         }
 
         public static class Module
@@ -112,7 +113,7 @@ namespace Electron
                 public static float reach = 7f;
                 public static int FakeGamemode = 1;
                 public static int AirJump = 16777473;
-                public static int Rapidhit = 0x1;
+                public static int Rapidhit = 0x0;
             }
         }
 
@@ -140,14 +141,14 @@ namespace Electron
         public static class ClientSettings
         {
             public static bool EnableDevSettings = false;
-            public static bool EnableDevCredits = false;
+            public static bool EnableDevCredits = false;//dev credits doesnt work atm and ive tried my best, it just spams it -Okuchi
         }
 
         public static class DefaultColors
         {
             public static class gbutton
             {
-                public static string on = "#3e9fb3";
+                public static string on = "#3e9fb3";//we need to change the colors to something more CLEAN!
                 public static string off = "#393f4d";//12343b
                 public static string locked = "#7F646464";
                 public static string trigger = "#7F6400FF";
@@ -177,7 +178,7 @@ namespace Electron
                 public static bool gbutton_module_bhop = true;
                 public static bool gbutton_module_speed = false;
                 public static bool gbutton_module_glide = true;
-                public static bool gbutton_module_rapidhit = true;
+                public static bool gbutton_module_rapidhit = false;
                 public static bool gbutton_module_nofall = true;
                 public static bool gbutton_module_fallfromhightplace = true;
                 public static bool gbutton_module_showcoordinates = true;

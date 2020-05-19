@@ -8,5 +8,6 @@ namespace Electron.lib.data
 {
     class gui_shit
     {
+        //only real electron devs can see the code below
     }
 }
