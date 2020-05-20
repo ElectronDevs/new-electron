@@ -76,7 +76,7 @@ namespace Electron
             // FakeCreative (1/2) -dont work
             public static string FakeGamemode = "Minecraft.Windows.exe+0x0297FFB0,0x1E74";
 
-            // FakeCrative Help (2/2) -cube wtf is this
+            // FakeCreative Help (2/2) -cube wtf is this
             public static string FakeGamemodeHelp = "Minecraft.Windows.exe+0x0299A838,0x80,0x18,0x10,0x40,0x0,0xf98,0x0,0xc1c";
             //this stupid gd update broke, literally, EVERYTHING
         }

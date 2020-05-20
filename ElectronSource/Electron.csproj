@@ -169,5 +169,11 @@
   <ItemGroup>
     <Resource Include="ICON64.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NewFile2.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
