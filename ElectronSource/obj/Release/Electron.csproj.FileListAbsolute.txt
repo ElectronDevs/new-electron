@@ -15,3 +15,9 @@ C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Ele
 C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.exe
 C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.pdb
 C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.lib.data.Form2.resources
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\DiscordRPC.dll
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\Newtonsoft.Json.dll
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\DiscordRPC.pdb
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\DiscordRPC.xml
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\bin\Release\Newtonsoft.Json.xml
+C:\Users\EpochOSwin\Documents\GitHub\new-electron\ElectronSource\obj\Release\Electron.csproj.CopyComplete

@@ -62,7 +62,7 @@ namespace Electron
                 {
                     LargeImageKey = "logo",
                     LargeImageText = "",
-                    SmallImageKey = "none"
+                    SmallImageKey = ""
                 }
             });
         }

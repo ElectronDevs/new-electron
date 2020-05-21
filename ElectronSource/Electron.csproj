@@ -107,10 +107,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DiscordRPC.cs" />
-    <Compile Include="DiscordRPC.Designer.cs">
-      <DependentUpon>DiscordRPC.cs</DependentUpon>
-    </Compile>
     <Compile Include="lib\cs\CLIENT.cs" />
     <Compile Include="lib\data\Form2.cs">
       <SubType>Form</SubType>
@@ -143,9 +139,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="DiscordRPC.resx">
-      <DependentUpon>DiscordRPC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="lib\data\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
