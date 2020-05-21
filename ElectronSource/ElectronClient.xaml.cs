@@ -18,6 +18,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using DiscordRPC;
+using DiscordRPC.Logging;
 using static Electron.Data;
 
 namespace Electron
@@ -27,12 +29,50 @@ namespace Electron
     /// </summary>
     public partial class MainWindow : Window
     {
+        public DiscordRpcClient Client { get; private set; } ///keep this and the text below it here and put everyhting under it this may brake if moved
+        void Setup()
+        {
+            Client = new DiscordRpcClient("712791570436587611");  //Creates the client
+            Client.Initialize();                            //Connects the client
 
+            //Set the logger
+            Client.Logger = new ConsoleLogger() { Level = LogLevel.Warning };
+
+            //Subscribe to events
+            Client.OnReady += (sender, e) =>
+            {
+                Console.WriteLine("Received Ready from user {0}", e.User.Username);
+            };
+
+            Client.OnPresenceUpdate += (sender, e) =>
+            {
+                Console.WriteLine("Received Update! {0}", e.Presence);
+            };
+
+            //Connect to the RPC
+            Client.Initialize();
+
+            //Set the rich presence
+            //Call this as many times as you want and anywhere in your code.
+            Client.SetPresence(new RichPresence()
+            {
+                Details = "Join the discord",
+                State = "Using Electron Client",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "logo",
+                    LargeImageText = "",
+                    SmallImageKey = "none"
+                }
+            });
+        }
 
         public MainWindow()
         {
             InitializeComponent();
         }
+
+   
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
